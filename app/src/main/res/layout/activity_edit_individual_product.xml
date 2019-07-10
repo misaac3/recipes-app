@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditIndividualProduct">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Edit Product"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/edtTxtNameOfProduct_EIP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="Name of Product"
+        android:singleLine="true"
+        android:text=""
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/edtTxtWeight_EIP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="Weight (in grams)"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:text=""
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/edtTxtPrice_EIP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="Price (in £)"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:text=""
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/edtTxtDescription_EIP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="Description"
+        android:text=""
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/btnSave_EIP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="OnSave"
+        android:text="Save" />
+
+</LinearLayout>

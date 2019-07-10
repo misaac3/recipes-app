@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Recipe Ingredients App"
+        android:layout_marginTop="25dp"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity='center'
+        android:orientation="horizontal"
+        android:weightSum='2'
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity='center'
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <Button
+                android:id="@+id/btnRegisterProduct_M"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="registerProductClick"
+                android:text="Register Product"
+                android:textSize="20sp" />
+
+
+            <Button
+                android:id="@+id/btnDisplayProducts_M"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="displayProductsClick"
+                android:text="Display Products"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnAvailability_M"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="availabilityClick"
+                android:text="Availability"
+                android:textSize="20sp" />
+            android:text="Availability" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity='center'
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <Button
+                android:id="@+id/btnEditProducts_M"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="EditProductsClick"
+                android:text="Edit Products"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnSearch_M"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="SearchClick"
+                android:text="Search"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnRecipes_M"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="RecipesClick"
+                android:text="Recipes"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

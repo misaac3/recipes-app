@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/DisplayView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="6"
+    tools:context=".DisplayProducts">
+
+
+    <ScrollView
+        android:id="@+id/ScrollViewDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:scrollbars="vertical"
+        tools:context=".DisplayProducts">
+
+        <LinearLayout
+            android:id="@+id/NestedLinearDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:orientation="vertical"
+            tools:context=".DisplayProducts">
+
+            <LinearLayout
+                android:id="@+id/TopNestedLinearDisplay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:context=".DisplayProducts"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LowerNestedLinearDisplay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:context=".DisplayProducts"></LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/originalBtn"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:onClick="addToKitchen"
+        android:text="Add To Kitchen" />
+</LinearLayout>

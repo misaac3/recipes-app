@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/AvailabilityView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="6"
+    tools:context=".Availability">
+
+
+
+    <ScrollView
+        android:id="@+id/ScrollViewDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:scrollbars="vertical"
+        tools:context=".Availability">
+
+        <LinearLayout
+            android:id="@+id/NestedLinearDisplay_A"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:orientation="vertical"
+            tools:context=".Availability">
+
+            <LinearLayout
+                android:id="@+id/TopNestedLinearDisplay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:context=".Availability"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LowerNestedLinearDisplay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:context=".Availability"></LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+    <Button
+        android:id="@+id/originalBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:onClick="onSaveClick"
+        android:text="Save" />
+
+</LinearLayout>
